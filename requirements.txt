@@ -1,3 +1,1 @@
-scikit-learn
-pandas
 decision-tree-id3
