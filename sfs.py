@@ -13,8 +13,6 @@ def sfs(x, y, k, clf, score):
     while len(set_of_indexes_to_return)!= k and len(set_of_indexes_havnt_used_yet) != 0  :
         max_score=0
         max_index=-1
-        print(set_of_indexes_to_return)
-        print(set_of_indexes_havnt_used_yet)
         for i in set_of_indexes_havnt_used_yet :
             set_of_indexes_to_return.append(i)
             if max_index==-1:
