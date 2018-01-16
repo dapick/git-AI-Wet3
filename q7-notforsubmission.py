@@ -1,11 +1,10 @@
 import sfs
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score,train_test_split
-from sklearn.metrics import confusion_matrix, accuracy_score
-from copy import deepcopy
-
+from sklearn.metrics import accuracy_score
 
 from extractData import X, y
+
 
 def scoreSFS(clf,x,y):
     return cross_val_score(clf, x, y, cv=4).mean()
