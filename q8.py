@@ -14,5 +14,5 @@ estimator = Id3Estimator(min_samples_split=20)
 no_prone_accuracy = cross_val_score(estimator, X_train, y_train, cv=4, scoring='accuracy').mean()
 print("Accuracy with pruning on cross validation is:", no_prone_accuracy)
 
-estimator.fit(X_train, y_train)
-print("Accuracy with pruning on test is:", accuracy_score(y_test, estimator.predict(X_test)))
+# estimator.fit(X_train, y_train)
+# print("Accuracy with pruning on test is:", accuracy_score(y_test, estimator.predict(X_test)))
